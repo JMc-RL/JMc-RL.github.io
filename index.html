@@ -2,63 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviresco Ltd</title>
+    <title>John McEwan Consulting</title>
     <style>
-        * {
-            box-sizing: border-box;
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            max-width: 600px;
-            width: 90%;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
             line-height: 1.6;
         }
-        .cta {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #fff;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
         }
-        .cta:hover {
-            background-color: #0056b3;
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>John McEwan Consulting</h1>
+        <p>Expertise at the Intersection of Healthcare and Technology</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="container">
-        <h1>Welcome to Reviresco Ltd</h1>
-        <p>Reviresco Ltd is committed to transforming your ideas into reality, providing  solutions tailored to your needs. We believe in growth, innovation, and excellence.</p>
-        <a href="#" class="cta">Learn More</a>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>With over 14 years in emergency healthcare as a Paramedic and a Clinical Safety Officer, I bring a unique blend of clinical knowledge and technology expertise. My role in digital health governance ensures that new technology meets safety standards and integrates seamlessly into clinical practice.</p>
+            <p>Currently pursuing an MSc in Computer Science, I am committed to advancing the field of healthcare technology to make it safer and more efficient.</p>
+        </section>
+        <section id="services">
+            <h2>Consulting Services</h2>
+            <ul>
+                <li><strong>Healthcare Technology and Clinical Informatics</strong> - Expert advice on integrating IT solutions in healthcare settings while ensuring regulatory compliance.</li>
+                <li><strong>Digital Health and Patient Safety</strong> - Strategies to minimize clinical risks and improve patient outcomes using digital tools.</li>
+                <li><strong>Emergency Services Operations</strong> - Optimizing technology use for emergency services to enhance operational efficiency.</li>
+                <li><strong>Healthcare Data Analysis</strong> - Insights and solutions for managing and utilizing healthcare data effectively.</li>
+                <li><strong>Regulatory Compliance and Governance</strong> - Guidance on meeting NHS and other regulatory standards for clinical safety in digital health.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:johnmcewan.mcpara@outlook.com">johnmcewan.mcpara@outlook.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/johnmcewanmcpara" target="_blank">John McEwan</a></p>
+        </section>
     </div>
+    <footer>
+        <p>&copy; 2024 John McEwan Consulting. All rights reserved.</p>
+    </footer>
 </body>
 </html>
