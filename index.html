@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reviresco</title>
+  <meta name="description" content="Independent clinical safety and digital risk consultancy for health IT and NHS digital transformation.">
+  <meta property="og:title" content="Reviresco – Clinical Safety & Digital Risk Consulting" />
+  <meta property="og:description" content="Independent CSO services, ePR integration risk, DCB0129/0160 compliance." />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PXCPKLTP5"></script>
   <script>
@@ -14,6 +18,9 @@
     gtag('config', 'G-8PXCPKLTP5');
   </script>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'IBM Plex Sans', sans-serif;
       margin: 0;
@@ -45,6 +52,11 @@
     }
     section {
       margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 6px;
+    }
+    section:nth-child(even) {
+      background-color: #f9f9fc;
     }
     h2 {
       color: #4C4C9D;
@@ -75,17 +87,18 @@
 <body>
   <header>
     <h1>
+      <img src="Reviresco_Logo_Transparent.png" alt="Reviresco logo" aria-label="Reviresco Logo" />
       Reviresco
     </h1>
     <p>Clinical Safety, Integration Risk & Digital Transformation Consultancy</p>
   </header>
   <main>
-    <section>
+    <section data-aos="fade-up">
       <h2>What We Do</h2>
       <p>Reviresco provides independent clinical safety and digital risk consultancy services for digital health vendors and NHS organisations. We specialise in DCB0129/0160 compliance, ePR integration safety, and regulatory alignment across digital transformation programmes.</p>
       <p>We work across the full system lifecycle — from initial concept and vendor onboarding through to live deployments, continuous improvement, and safety monitoring. Our consultancy combines regulatory knowledge with frontline clinical insight to help teams deliver safe, usable, and assured solutions.</p>
     </section>
-    <section>
+    <section data-aos="fade-up">
       <h2>Core Services</h2>
       <ul>
         <li>Clinical Safety Officer (CSO) Services – DCB0129 / DCB0160</li>
@@ -96,7 +109,7 @@
         <li>Support with DTAC, DSPT, and NHS assurance readiness</li>
       </ul>
     </section>
-    <section>
+    <section data-aos="fade-up">
       <h2>Use Cases</h2>
       <ul>
         <li>Start-up vendor preparing for NHS procurement and DCB0129 sign-off</li>
@@ -104,14 +117,18 @@
         <li>ICS digital team needing retained clinical safety input across multiple workstreams</li>
       </ul>
     </section>
-    <section>
+    <section data-aos="fade-up">
       <h2>Get in Touch</h2>
-      <p>To request a quote or book an introductory discovery call, email:</p>
-      <a href="mailto:hello@reviresco.ltd" class="button">Contact Us</a>
+      <p>To request a quote or book an introductory discovery call, click below:</p>
+      <a href="https://calendly.com/reviresco/30min" class="button" aria-label="Book a 30-minute call">Book a Call</a>
     </section>
   </main>
   <footer>
     &copy; 2025 Reviresco. All rights reserved.
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
