@@ -29,24 +29,26 @@
       color: #1f1f1f;
     }
     header {
-      background: #4C4C9D;
+      background: linear-gradient(135deg, #4C4C9D 0%, #5656B4 100%);
       color: white;
-      padding: 2rem;
+      padding: 2.5rem 1rem;
       text-align: center;
     }
-    header h1 {
+    header .logotype {
       font-family: 'IBM Plex Mono', monospace;
+      font-weight: 600;
+      font-size: 3rem;
       margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    } 
+    header .strapline {
+      margin-top: 0.5rem;
+      font-size: 2rem;
+      font-weight: 400;
     }
     h2 {
       line-height: 1.2;
-    }
-    header img {
-      height: 40px;
     }
     main {
       padding: 2rem;
@@ -102,10 +104,8 @@
 </head>
 <body>
   <header>
-    <h1>
-      Reviresco
-    </h1>
-    <p>Clinical Safety, Integration Risk & Digital Transformation Consultancy</p>
+    <h1 class="logotype">REVIRESCO</h1>
+    <p class="strapline">Clinical Safety - Integration Risk - Digital Transformation</p>
   </header>
   <main>
     <section data-aos="fade-up">
