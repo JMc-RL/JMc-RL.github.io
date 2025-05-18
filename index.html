@@ -6,7 +6,7 @@
   <title>REVIRESCO</title>
   <meta name="description" content="Clinical safety and digital transformation consultancy for NHS and digital health teams.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PXCPKLTP5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -34,12 +34,38 @@
       font-size: 2.5rem;
       letter-spacing: 0.08em;
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
     }
+    .logotype .block {
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
+    }
+    .block-1 { animation-delay: 0.2s; }
+    .block-2 { animation-delay: 0.6s; }
+    .block-3 { animation-delay: 1s; }
+
+    .dot {
+      font-size: 1.5rem;
+      margin: 0 0.2em;
+      opacity: 0;
+      animation: fadeIn 0.4s ease forwards;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
     .strapline {
-      margin-top: 0.75rem;
+      margin-top: 1rem;
       font-size: 1.1rem;
       font-weight: 400;
     }
+
     main {
       max-width: 780px;
       margin: 0 auto;
@@ -58,6 +84,17 @@
       font-size: 0.95rem;
       margin-top: -0.5rem;
       margin-bottom: 1.5rem;
+    }
+    .service-block p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+    .service-block strong {
+      display: block;
+      font-weight: 600;
+      color: #4C4C9D;
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
     }
     ul {
       padding-left: 1.25rem;
@@ -104,7 +141,13 @@
 </head>
 <body>
   <header>
-    <h1 class="logotype">REVIRESCO</h1>
+    <h1 class="logotype">
+      <span class="block block-1">REVI</span>
+      <span class="dot">•</span>
+      <span class="block block-2">RES</span>
+      <span class="dot">•</span>
+      <span class="block block-3">CO</span>
+    </h1>
     <p class="strapline">Clinical Safety • Integration Risk • Digital Transformation</p>
   </header>
 
